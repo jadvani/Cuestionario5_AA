@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="motor_UPDRS <= 0.5\ngini = 0.653\nsamples = 4406\nvalue = [1406, 1866, 1134]", fillcolor="#e1fbec"] ;
+1 [label="age <= 0.5\ngini = 0.434\nsamples = 2045\nvalue = [1395, 650, 0]", fillcolor="#f1bc95"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="PPE <= 0.5\ngini = 0.331\nsamples = 1021\nvalue = [807, 214, 0]", fillcolor="#eca26e"] ;
+1 -> 5 ;
+7 [label="gini = 0.252\nsamples = 642\nvalue = [547, 95, 0]", fillcolor="#ea975b"] ;
+5 -> 7 ;
+8 [label="gini = 0.431\nsamples = 379\nvalue = [260, 119, 0]", fillcolor="#f1bb94"] ;
+5 -> 8 ;
+6 [label="gini = 0.489\nsamples = 1024\nvalue = [588, 436, 0]", fillcolor="#f8decc"] ;
+1 -> 6 ;
+2 [label="motor_UPDRS <= 1.5\ngini = 0.504\nsamples = 2361\nvalue = [11, 1216, 1134]", fillcolor="#f2fdf7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.38\nsamples = 1601\nvalue = [11, 1198, 392]", fillcolor="#7beeab"] ;
+2 -> 3 ;
+4 [label="gini = 0.046\nsamples = 760\nvalue = [0, 18, 742]", fillcolor="#843ee6"] ;
+2 -> 4 ;
+}
